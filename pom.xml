@@ -13,6 +13,11 @@
 	<properties>
 		<log4j.version>2.3</log4j.version>
     </properties>
+
+	<!-- Junit Properties -->
+	<Junit.version>4.12</Junit.version>
+	<easymock.version>3.4</easymock.version>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -98,6 +103,18 @@
 			<version>${log4j.version}</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 	</dependencies>
+	<!-- Junit Libraries -->
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>${junit.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.easymock</groupId>
+		<artifactId>easymock</artifactId>
+		<version>${easymock.version}</version>
+		<scope>test</scope>
 	<build>
 		<plugins>
 			<plugin>
